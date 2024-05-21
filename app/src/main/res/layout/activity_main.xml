@@ -32,7 +32,8 @@
         android:scaleType="fitXY"
         android:src="@drawable/huellita"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/line1" />
+        app:layout_constraintTop_toTopOf="@id/line1"
+        tools:ignore="ContentDescription" />
 
 <androidx.constraintlayout.widget.Guideline
     android:id="@+id/line1"
@@ -64,7 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/line3"
-        app:layout_constraintTop_toTopOf="@id/line2" />
+        app:layout_constraintTop_toTopOf="@id/line2"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/customButton"
