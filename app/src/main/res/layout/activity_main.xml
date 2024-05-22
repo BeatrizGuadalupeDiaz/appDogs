@@ -69,7 +69,7 @@
         tools:ignore="ContentDescription" />
 
     <Button
-        android:id="@+id/customButton"
+        android:id="@+id/btn_huellita_nextDog"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="@drawable/rounded_button"

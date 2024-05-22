@@ -15,8 +15,8 @@ class DataSourceDogsRandom {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    private val service = retrofit.create(HomeServiceRandom::class.java)
+    private val serviceDogs = retrofit.create(HomeServiceRandom::class.java)
     suspend fun getImageRandom():Response<ResponseRandomDogs>{
-        return service.getImageRandomDogs()
+        return serviceDogs.getImageRandomDogs()
     }
 }
