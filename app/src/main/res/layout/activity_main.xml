@@ -11,8 +11,8 @@
         android:id="@+id/tv_title_searchFriends"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
         android:shadowColor="#80000000"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -20,8 +20,8 @@
         android:text="@string/title_searchFriend"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/line1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -35,24 +35,26 @@
         app:layout_constraintTop_toTopOf="@id/line1"
         tools:ignore="ContentDescription" />
 
-<androidx.constraintlayout.widget.Guideline
-    android:id="@+id/line1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_constraintGuide_percent="0.13"
-    android:orientation="horizontal"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintGuide_percent="0.2"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/line3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintGuide_percent="0.85"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
 
     <ImageView
         android:id="@+id/img_btn_dog"
@@ -62,28 +64,29 @@
         android:layout_marginTop="40dp"
         android:background='@drawable/rounded_img'
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/line3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/line3"
         app:layout_constraintTop_toTopOf="@id/line2"
         tools:ignore="ContentDescription" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_huellita_nextDog"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@drawable/rounded_button"
-        android:drawableEnd="@drawable/icon_back"
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:drawableEnd="@drawable/icon_back"
+        android:drawableTint="@color/orange_title"
+        android:drawablePadding="30dp"
         android:paddingHorizontal="20dp"
         android:text="@string/text_btn_back"
-        android:textColor="@color/black"
         android:textAlignment="textStart"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
