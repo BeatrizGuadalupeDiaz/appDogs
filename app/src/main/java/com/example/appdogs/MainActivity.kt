@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //callRandomDogs()
-        //observerRandomDogs()
+        callRandomDogs()
+        observerRandomDogs()
     }
     private fun callRandomDogs(){
         //llamados de funciones de viewmodel
